@@ -1,0 +1,25 @@
+[package]
+name = "grr-glyph"
+version = "0.1.0"
+authors = ["msiglreith <m.siglreith@gmail.com>"]
+edition = "2018"
+description = "Text rendering library for grr"
+homepage = "https://github.com/msiglreith/grr-glyph"
+repository = "https://github.com/msiglreith/grr-glyph"
+keywords = ["graphics"]
+documentation = "https://docs.rs/grr-glyph"
+license = "Apache-2.0"
+exclude = [
+    "examples/*",
+]
+
+[dependencies]
+glyph_brush = "0.2"
+grr = "0.5"
+
+[dev-dependencies]
+glutin = "0.19"
+
+[[example]]
+name = "depth"
+path = "examples/depth.rs"
